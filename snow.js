@@ -25,7 +25,7 @@ $('#scarf1').click(function(){
      
      $('#nose1').css('display','none');
      $('#nose2').css('display','block');
-     $('#nose2').show().addClass('animated swing');
+     $('#nose2').show().addClass('animated zoomIn');
      k++;
      final();
   });
@@ -34,7 +34,7 @@ $('#scarf1').click(function(){
      
      $('#hand11').css('display','none');
      $('#hand12').css('display','block');
-     $('#hand12').show().addClass('animated swing');
+     $('#hand12').show().addClass('animated jello');
      k++;
      final();
   });
@@ -43,7 +43,7 @@ $('#scarf1').click(function(){
      
      $('#hand21').css('display','none');
      $('#hand22').css('display','block');
-     $('#hand22').show().addClass('animated swing');
+     $('#hand22').show().addClass('animated rubberBand');
      k++;
      final();
   });
@@ -52,7 +52,7 @@ $('#scarf1').click(function(){
      
      $('#eye11').css('display','none');
      $('#eye12').css('display','block');
-     $('#eye12').show().addClass('animated swing');
+     $('#eye12').show().addClass('animated rotateIn');
      k++;
      final();
   });
@@ -61,7 +61,7 @@ $('#scarf1').click(function(){
      
      $('#eye21').css('display','none');
      $('#eye22').css('display','block');
-     $('#eye22').show().addClass('animated swing');
+     $('#eye22').show().addClass('animated rotateIn');
      k++;
      final();
   });
@@ -70,7 +70,7 @@ $('#scarf1').click(function(){
      
      $('#btn11').css('display','none');
      $('#btn12').css('display','block');
-     $('#btn12').show().addClass('animated swing');
+     $('#btn12').show().addClass('animated flip');
      k++;
      final();
   });
@@ -79,7 +79,7 @@ $('#scarf1').click(function(){
      
      $('#btn21').css('display','none');
      $('#btn22').css('display','block');
-     $('#btn22').show().addClass('animated swing');
+     $('#btn22').show().addClass('animated flip');
      k++;
      final();
   });
@@ -90,6 +90,7 @@ $('#scarf1').click(function(){
           setTimeout(function(){ 
             $("#tree").fadeIn(1000);
             $("#greet").fadeIn(1000);
+            $("#santa").fadeIn(1000);
             $("#inst").css('display','none');
           }, 1000);   
         }
@@ -137,14 +138,14 @@ $('#medium1').click(function(){
      
      $('#medium1').css('display','none');
      $('#medium').css('display','block');
-     $('#medium').show().addClass('animated swing');
+     $('#medium').show().addClass('animated rollIn');
   });
 
   $('#small1').click(function(){
      
      $('#small1').css('display','none');
      $('#small').css('display','block');
-     $('#small').show().addClass('animated swing');
+     $('#small').show().addClass('animated rotateInDownRight');
   });
 
 //=================Snow man fill====================================
