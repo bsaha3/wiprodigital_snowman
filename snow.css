@@ -45,51 +45,178 @@ body {
 #text1{
    margin-left:600px;
    margin-top:20px;
-   font-family:Times New Roman;
-   font-size: 30;
+   
+   font-family: 'Baloo Thambi', cursive;
+   font-size: 36px;
    color:white;
    position:absolute;
 }
 
-#draggable{
-  margin-top: 670px;
+#hat2{
+  position: absolute;
+  left:379px;
+  bottom:461px;
+  display: none;
+}
+
+#scarf2{
+  position: absolute;
+  left:366px;
+  bottom:234px;
+  height:178px;
+  display: none;
+}
+
+#nose1{
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+}
+
+#nose2{
+  position: absolute;
+  bottom:371px;
+  left:374px;
+  display: none;
+}
+
+#hand11{
+  position: absolute;
+  bottom:50px;
+  right:214px;
+}
+
+#hand12{
+  position: absolute;
+  bottom:252px;
+  left:266px;
+  display: none;
+}
+
+#hand21{
+  position: absolute;
+  bottom:50px;
+  right:30px;
+}
+
+#hand22{
+  position: absolute;
+  bottom:252px;
+  left:514px;
+  display: none;
+}
+
+#eye11{
+  position: absolute; 
+  top:64px;
+  left:504px;
+}
+
+#eye12{
+  position: absolute;
+  bottom:367px;
+  left:334px;
+  display: none;
+}
+
+#eye21{
+  position: absolute;
+  top:64px;
+  left:504px;
+}
+
+#eye22{
+  position: absolute;
+  bottom:367px;
+  left:378px;
+  display: none;
+}
+
+
+#btn11{
+  position: absolute;
+  top:107px;
+  left:575px;
+  height:17px;
+}
+
+#btn12{
+  position: absolute;
+  bottom:312px;
+  left:429px;
+  height:17px;
+  display: none;
+}
+
+#btn21{
+  position: absolute;
+  top:167px;
+  left:575px;
+  height:17px;
+}
+
+#btn22{
+  position: absolute;
+  bottom:270px;
+  left:429px;
+  height:17px;
+  display: none;
+}
+
+
+
+.pngs{
+  bottom:5px;
   position:absolute;
 }
 
-#body-large{
+#big{
+  position:absolute;
+  bottom:100px;
+  left:300px;
+  height:250px;
+}
+
+#medium{
+  position:absolute;
+  bottom:252px;
+  left:341px;
+  height:180px;
   display: none;
 }
 
-#body-medium{
+#small{
+  position:absolute;
+  bottom:383px;
+  left:376px;
+  height:120px;
   display: none;
 }
 
-#body-small{
-  display: none;
+#medium1{
+  position:absolute;
+  bottom:87px;
+  left:297px;
+  height:180px;
 }
 
-#body-large-border{
-  display: none;
-}
-
-#body-medium-border{
-  display: none;
-}
-
-#body-small-border{
-  display: none;
+#small1{
+  position:absolute;
+  bottom:95px;
+  left:458px;
+  height:120px;
 }
 
 #tree{
   position:absolute;
-  margin-left:1200px;
-  margin-top:300px;
+  right:100px;
+  bottom:100px;
   display:none;
 }
 
 #greet{
   position:absolute;
-  margin-left:550px;
+  right:300px;
   margin-top:80px;
   display:none; 
 }
@@ -98,10 +225,59 @@ body {
    position:absolute;
    margin-left:600px;
    margin-top:100px;
-   border:1;
-   color:yellow;
+   color:white;
+   font-size: 22px;
+   font-family: 'Baloo Thambi', cursive;
+
 }
 
 .parts{
   display:none;
+}
+
+#logo{
+  position: fixed;
+  bottom:2px;
+  right:2px;
+}
+
+#i{
+  position: absolute;
+  border:2px solid #456879;
+	border-radius:10px;
+	height: 5%;
+  width:30%;
+	margin-left: -15%;
+  top:40%;
+  left:50%;
+  font-size: 20px;
+  font-family: cursive;
+  text-align: center;
+}
+
+#landbtn{
+  position:absolute;
+  top:46%;
+  left:57.5%;
+  border:2px solid #456879;
+	border-radius:10px;
+	height: 7%;
+  width:15%;
+  margin-left: -15%;
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 30px;
+  
+  opacity: 0.6;
+  background-color: #65bee7;
+  
+}
+
+
+/* Portrait & landscape phone */
+@media (max-width: 500px) {
+	
+  #inst{
+   color:red;
+}
+
 }
