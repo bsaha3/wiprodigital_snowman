@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="bootstrap.css" />
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
     <link rel="stylesheet" href="snow.css" />
@@ -18,10 +19,6 @@
 <body>
     <audio src="jingle.mp3" autoplay="autoplay" loop="loop"></audio>
 
-    
-
-    <marquee behavior="scroll" id="santa" direction="left"><img style="height:150px;width:250px" src="santa11.gif" width="120" height="80" alt="Natural" /></marquee>
-
     <img src="hat.png" style="margin-left:100px;" height="100px" class="clickable pngs" id="hat1" />
     <img src="scarf.png"  height="100px" class="clickable pngs" id="scarf1" />
     <img src="nose.png"  height="100px" class="clickable" id="nose1" />
@@ -32,7 +29,7 @@
     <img src="button.png" class="clickable" id="btn11" />
     <img src="button.png" class="clickable" id="btn21" />
     
-    <img src="WD_logo_BLK_RGB.png" id="logo" height="40px"/>
+    
 
     <img id="tree" src="xmas.png" height="400px" />
 
@@ -58,18 +55,41 @@
 
     <span id="text1">  </span>
 
-    <div id="inst">
-            <span>Click on the snowballs to fill the snowman</span><br>
-            <span>Click the nose, black dotted eyes, hands, hat and scarf to the snowman</span><br>
-            <span>Click on the red bullets for the buttons.</span><br>
-    </div>
+    <ul id="inst">
+            <li>Click on the snowballs to fill the snowman</li>
+            <li>Click the nose, black dotted eyes, hands, hat and scarf to the snowman</li>
+            <li>Click on the red bullets for the buttons.</li>
+    </ul>
 
+    <marquee behavior="scroll" id="santa" direction="left"><img  id="si" src="santa11.gif" width="120" height="80" alt="Natural" /></marquee>
+
+    
+    
         <img src="landingPage.jpg" id="land" style="position:absolute;" height="100%" width="100%" />
 
-        <form height="100%" width="100%" action="#">
+        <form height="100%" width="100%" action="#" id="gg">
             <input type="text" id="i" placeholder="Enter your name and proceed"/>
             <input type="button" id="landbtn" onclick="next()" value="Proceed"/>
         </form>
+
+        
+            <div id="header">
+            </div>
+            <img src="WD_logo_BLK_RGB.png" id="logo" height="40px"/>
+
+            <a href="https://www.facebook.com/WiproDigital/" style="position:absolute;right:10px; top:10px" >
+                <img src="Facebook.png" alt="fb" id="facebook"/>
+            </a>
+            <a href="https://twitter.com/wiprodigital" style="position:absolute;right:40px; top:10px" >
+                <img src="twitter.png" alt="tweet" id="twitter"/>
+            </a>
+            <a href="https://www.linkedin.com/company/wipro-digital" style="position:absolute;right:70px; top:10px" >
+                <img src="linkedin.png" alt="lin" id="linkedin"/>
+            </a>
+
+            <!--https://www.facebook.com/WiproDigital/
+            https://twitter.com/wiprodigital
+            https://www.linkedin.com/company/wipro-digital-->
 
     <script src="snowstorm.js"></script>
     <script src="snow.js"></script>

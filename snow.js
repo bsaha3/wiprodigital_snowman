@@ -84,29 +84,20 @@ $('#scarf1').click(function(){
      final();
   });
   
-  function final(){
-    if(k==9){         
-
-          setTimeout(function(){ 
-            $("#tree").fadeIn(1000);
-            $("#greet").fadeIn(1000);
-            $("#santa").fadeIn(1000);
-            $("#inst").css('display','none');
-          }, 1000);   
-        }
-  }
+  
 
 //===========Dragging Hat===========================================
 
 
 //===========Welcome================================================
+
   var text;
     function next(){
       text = document.getElementById("i").value;
       $("#land").css('display','none');
       $("#landbtn").css('display','none');
       $("#i").css('display','none');
-      $("#text1").text("Hello "+text.toUpperCase());
+      $("#text1").text("Hello "+text.toString().split(" ")[0].toUpperCase());
 
       setTimeout(function(){ 
         $("#body-large-border").css('display','block');
@@ -116,18 +107,28 @@ $('#scarf1').click(function(){
 
     $('#i').keydown(function(event) {
       // enter has keyCode = 13, change it if you want to use another button
+      // e.dedault();
       if (event.keyCode == 13) {
         text = document.getElementById("i").value;
       $("#land").css('display','none');
       $("#landbtn").css('display','none');
       $("#i").css('display','none');
-      $("#text1").text("Hello "+text.toUpperCase());
+      $("#text1").text("Hello "+text.toString().split(" ")[0].toUpperCase());
 
       setTimeout(function(){ 
         $("#body-large-border").css('display','block');
       }, 1000);
       }
     });
+
+    $(document).ready(function() {
+    $(window).keydown(function(event){
+      if(event.keyCode == 13) {
+        event.preventDefault();
+        return false;
+      }
+    });
+  });
 
 //===========Welcome================================================
 
@@ -153,7 +154,16 @@ $('#medium1').click(function(){
 
 //============End Greeting==========================================
 
-        console.log(k);
-        
+    function final(){
+    if(k==9){         
+
+          setTimeout(function(){ 
+            $("#tree").fadeIn(1000);
+            $("#greet").fadeIn(1000);
+            $("#santa").fadeIn(1000);
+            $("#inst").css('display','none');
+          }, 1000);   
+        }
+  }
 
 //============End Greeting==========================================
